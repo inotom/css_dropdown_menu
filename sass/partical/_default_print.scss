@@ -1,0 +1,125 @@
+/*******************************************
+ ***** DEFAULT PRINT STYLE *****************
+ *******************************************/
+
+$unit_pc: 2.5%;
+$unit_px: 2.5px;
+$unit_em: .25em;
+
+body {
+    font: {
+        family: serif;
+    }
+}
+
+h1, h2, h3, h4, h5, h6,
+p, td, th, li, dt, dd, blockquote, pre {
+    line-height: 120%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: {
+        weight: bold;
+        family: sans-serif;
+    }
+}
+
+h1 {
+    font: {
+        size: 140%;
+    }
+}
+
+h2 {
+    font: {
+        size: 130%;
+    }
+}
+
+h3 {
+    font: {
+        size: 120%;
+    }
+}
+
+h4 {
+    font: {
+        size: 110%;
+    }
+}
+
+h5 {
+    font: {
+        size: 100%;
+    }
+}
+
+h6 {
+    font: {
+        size: 90%;
+    }
+}
+
+i {
+    font: {
+        style: italic;
+    }
+}
+
+b {
+    font: {
+        weight: bold;
+    }
+}
+
+ins {
+    text-decoration: none;
+    border-bottom: {
+        style: dashed;
+        width: 1px;
+    }
+}
+
+s,
+del {
+    text-decoration: line-through;
+}
+
+em {
+    font: {
+        style: italic;
+    }
+}
+
+strong {
+    font: {
+        weight: bold;
+    }
+}
+
+pre {
+    font: {
+        family: monospace;
+    }
+}
+
+cite {
+    font: {
+        style: italic;
+    }
+}
+
+blockquote {
+    margin: {
+        left: $unit_pc;
+        right: $unit_pc;
+    }
+}
+
+code,
+var,
+kbd {
+    font: {
+        family: monospace;
+    }
+}

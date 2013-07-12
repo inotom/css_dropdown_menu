@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/*******************************************
+ ***** RESET STYLE *************************
+ *******************************************/
+
+@import "compass";
+@import "compass/reset";
+@import "partical/settings";
+@import "partical/default";
+
+/*******************************************
+ ***** COMMON STYLE ************************
+ *******************************************/
+
+html { overflow-y: scroll; }
+
+body {
+    color: $textColor;
+    background-color: $bgColor;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+    background-color: #fee;
+
+    .nav-container {
+        @include clearfix;
+        background-color: white;
+    }
+
+    .menu {
+        ul {
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            @include transition-property(all);
+            @include transition-duration(.4s);
+            @include transition-timing-function(ease-in-out);
+            @include transition-delay(0s);
+        }
+        li {
+            float: left;
+            width: 150px; /* root menu box width */
+            background-color: white; /* root menu box bgcolor */
+            li {
+                clear: both;
+            }
+            &:hover {
+                & > ul {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
